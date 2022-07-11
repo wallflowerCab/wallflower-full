@@ -30,7 +30,6 @@ query($url: String!){
       edges{
         node{
           url
-          
         }
       }
     }
