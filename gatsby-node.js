@@ -1,13 +1,12 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  return graphql(`
-    query IndexQuery  {
+  return new Promise((resolve, reject) => {
+    graphql(`
+      {
         allDatoCmsProject {
           edges {
             node {
@@ -17,16 +16,16 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
-      result.data.allDatoCmsProject.edges.forEach(({ node }) => {
+      result.data.allDatoCmsProject.edges.map(({ node: work }) => {
         createPage({
-          path: `${node.url}`,
+          path: `/${work.url}`,
           component: path.resolve(`./src/templates/project.js`),
           context: {
-            url: node.url
+            url: work.url,
           },
         })
       })
-
+      resolve()
     })
-
+  })
 }
