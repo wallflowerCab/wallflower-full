@@ -26,7 +26,14 @@ const ProjectTemplate = ({data}) => {
 
 export const query = graphql`
 query($url: String!){
-
+  allDatoCmsProject{
+      edges{
+        node{
+          url
+          
+        }
+      }
+    }
   datoCmsProject(url: {eq: $url}){
     url
     previousProjectText
