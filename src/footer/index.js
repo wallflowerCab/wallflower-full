@@ -1,4 +1,4 @@
-import * as React from 'React'
+import * as React from 'react'
 import {Holder, Column, Title, List, FootLogo, ImgHold} from './styles'
 import Logo from '~/images/WF_Logo_Foot.svg'
 

@@ -1,4 +1,4 @@
-import * as React from 'React'
+import * as React from 'react'
 import {Holder, Block, Title, Text, OutLink, Image, Content} from './styles'
 import {Link} from 'gatsby'
 
