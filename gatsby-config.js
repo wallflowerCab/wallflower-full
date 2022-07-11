@@ -43,14 +43,7 @@ module.exports = {
        previewMode: false,
        disableLiveReload: false,
      },},
-   {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-    __key: "pages"
-  },
+   
   {
         resolve: "gatsby-plugin-web-font-loader",
         options: {
