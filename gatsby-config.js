@@ -8,7 +8,6 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `wall_Flower_Full`,
-    siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-breakpoints", "gatsby-plugin-layout", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-recaptcha", `gatsby-plugin-catch-links`, {
     resolve: 'gatsby-source-filesystem',
@@ -43,7 +42,7 @@ module.exports = {
        previewMode: false,
        disableLiveReload: false,
      },},
-   
+
   {
         resolve: "gatsby-plugin-web-font-loader",
         options: {
