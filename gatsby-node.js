@@ -7,21 +7,21 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allDatoCmsProject {
+        allDatoCmsTest {
           edges {
             node {
-              url
+              slug
             }
           }
         }
       }
     `).then(result => {
-      result.data.allDatoCmsProject.edges.map(({ node: work }) => {
+      result.data.allDatoCmsTest.edges.map(({ node: work }) => {
         createPage({
-          path: `/${work.url}`,
-          component: path.resolve(`./src/templates/project.js`),
+          path: `/${work.slug}`,
+          component: path.resolve(`./src/templates/test.js`),
           context: {
-            url: work.url,
+            slug: work.slug,
           },
         })
       })
