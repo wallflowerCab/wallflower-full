@@ -30,7 +30,7 @@ query($url: String!){
       edges{
         node{
           url
-        }
+        } 
       }
     }
   datoCmsProject(url: {eq: $url}){
