@@ -1,6 +1,23 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.(glb)$/i,
+          use: [
+            {
+              loader: "url-loader",
+            },
+          ],
+        },
+      ],
+    },
+  })
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -20,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
           path: `${node.url}`,
           component: path.resolve(`./src/templates/project.js`),
           context: {
-            url: node.url,
+            url: node.url
           },
         })
       })
