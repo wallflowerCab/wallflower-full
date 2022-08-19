@@ -17,7 +17,6 @@ outline: 2px solid;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-outline-offset: -2px;
 margin-top: -1px;
 @media(max-width: 750px){
   width: 100%;

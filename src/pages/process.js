@@ -24,7 +24,7 @@ const ProcessPage = () => {
     <TopHold>
       <TopText>
         <h2>Our Process</h2>
-        <h4>Hi Al! Here’s a birds eye view of your entire project with us. You’ll find timelines, project updates, design files, contracts, and helpful reference files for every step of the process. Of course, we’re still always here to answer any questions you might have.</h4>
+        <h4>Every cabinet project we take on follows 4 steps to ensure the highest quality product and smoothest process achievable. Starting with a clear on-boarding through a rigorous final installation, we strive to be as transparent and communicative as possible at every step.</h4>
       </TopText>
       <LinkList>
         <LinkHold onClick={executeScroll1}><p>01.</p><LinkLine/><p>On-Boarding</p></LinkHold>
@@ -39,13 +39,17 @@ const ProcessPage = () => {
         <img src={image1} className="noLine"/>
         <TextChunk>
         <h3>Step 1: On-Boarding</h3>
-        <p>Hi Al! Here’s a birds eye view of your entire project with us. You’ll find timelines, project updates, design files, contracts, and helpful reference files for every step of the process. Of course, we’re still always here to answer any questions you might have.</p>
+        <p>Before work begins, we discuss your space, needs, and vision. From these conversations, and an initial measurement of the space, we develop an index of cabinets to build and a quotation of the estimated cost.</p>
         </TextChunk>
       </TwoBlocks>
 
       <BigChunk ref={myRef2}>
       <h3>Step 2: Design</h3>
-      <p>Hi Al! Here’s a birds eye view of your entire project with us. You’ll find timelines, project updates, design files, contracts, and helpful reference files for every step of the process. Of course, we’re still always here to answer any questions you might have.</p>
+      <p>In this phase, we develop a cabinet
+system collaboratively and determine the
+number & placement of units based on our conversations and measurements.
+Cabinet plans are illustrated through renders, and up to 2 rounds of
+revisions are included in the process.</p>
         <TwoBlocks className="topFlex">
           <TextChunk>
             <img src={image2}/>
@@ -61,7 +65,8 @@ const ProcessPage = () => {
       <TwoBlocks ref={myRef3}>
         <TextChunk>
         <h3>Step 3: Assembly</h3>
-        <p>Hi Al! Here’s a birds eye view of your entire project with us. You’ll find timelines, project updates, design files, contracts, and helpful reference files for every step of the process. Of course, we’re still always here to answer any questions you might have.</p>
+        <p>Each unit is cut and assembled with
+precision to ensure an exact match to all agreed upon designs.</p>
         </TextChunk>
         <img src={image4}/>
       </TwoBlocks>
@@ -70,7 +75,7 @@ const ProcessPage = () => {
       <img src={image5}/>
         <TextChunk>
         <h3>Step 4: Installation</h3>
-        <p>Hi Al! Here’s a birds eye view of your entire project with us. You’ll find timelines, project updates, design files, contracts, and helpful reference files for every step of the process. Of course, we’re still always here to answer any questions you might have.</p>
+        <p>After all units have been built, we install them on site to ensure a perfect fit. We take extreme care to make sure every cabinet is level, straight, and at the correct height.</p>
         </TextChunk>
       </TwoBlocks>
 
