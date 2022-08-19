@@ -17,6 +17,13 @@ margin-bottom: -30px;
 @media(max-width: 500px){
   height: 300px;
 }
+@media(min-width: 1130px){
+  height: 500px;
+}@media(min-width: 1300px){
+  height: 550px;
+}@media(min-width: 1400px){
+  height: 600px;
+}
 `
 
 export const BigImage = styled.div`
