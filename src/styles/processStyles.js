@@ -141,6 +141,10 @@ border-bottom: 2px solid var(--Dark);
 &.noBottom{
   border-bottom: none;
 }
+
+&.topFlex{
+  align-items: flex-start;
+}
 img{
   width: calc(50% - 15px);
   outline: 2px solid var(--Dark);

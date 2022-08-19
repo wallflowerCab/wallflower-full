@@ -46,7 +46,7 @@ const ProcessPage = () => {
       <BigChunk ref={myRef2}>
       <h3>Step 2: Design</h3>
       <p>Hi Al! Here’s a birds eye view of your entire project with us. You’ll find timelines, project updates, design files, contracts, and helpful reference files for every step of the process. Of course, we’re still always here to answer any questions you might have.</p>
-        <TwoBlocks>
+        <TwoBlocks className="topFlex">
           <TextChunk>
             <img src={image2}/>
             <p>During design, we collaboratively develop a layout and assembly of products that comprise your project. </p>
