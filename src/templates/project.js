@@ -13,12 +13,12 @@ const ProjectTemplate = ({data}) => {
   return(
       <>
       <MainArea stuff={project} />
-      <BottomNav
+{/*     <BottomNav
         prevText={projectFull.previousProjectText}
         prevLink={projectFull.previousProjectUrl}
         nextText={projectFull.nextProjectText}
         nextLink={projectFull.nextProjectUrl}
-        />
+        /> */ }
       <ContactSmall text ="Feeling inpsired? Get in touch to get started on a cabinetry project of your own."/>
       </>
   )
@@ -30,7 +30,7 @@ query($url: String!){
       edges{
         node{
           url
-        } 
+        }
       }
     }
   datoCmsProject(url: {eq: $url}){
@@ -62,27 +62,6 @@ query($url: String!){
       }
     }
 
-    ... on DatoCmsTwoImage{
-      imageOne{
-        url
-      }
-      imageTwo{
-        url
-      }
-      textOne{
-        value
-      }
-      internal{
-        type
-      }
-      textTwo{
-        value
-      }
-      linkTextTwo
-      linkUrlTwo
-      linkTextOne
-      linkUrlOne
-    }
 
     ... on DatoCmsIntroText{
       internal{
@@ -90,6 +69,15 @@ query($url: String!){
       }
       text{
         value
+      }
+    }
+
+    ... on DatoCmsTwoImageWork{
+      internal{
+        type
+      }
+      images{
+        url
       }
     }
 

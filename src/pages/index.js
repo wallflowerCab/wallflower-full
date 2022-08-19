@@ -3,12 +3,17 @@ import ContactForm from "~/components/contactForm/contactForm"
 import LogoImg from "~/images/WF_Logo.svg"
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import {MainArea} from '~/components/mainArea/index'
+import {ThreeHero} from '~/components/threeHero/index'
+
 
 // markup
 const IndexPage = ({data}) => {
   const homePage = data.datoCmsHomepage.mainArea;
   return (
+    <>
+    <ThreeHero/>
     <MainArea stuff={homePage} />
+    </>
   )
 }
 

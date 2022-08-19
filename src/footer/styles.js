@@ -46,7 +46,9 @@ font-size: 18px;
 margin-top: 12px;
 font-family: planar;
 margin-bottom: 6px;
-
+a{
+  color: var(--Light);
+}
 @media(max-width: 750px){
 }
 `
@@ -59,5 +61,8 @@ li{
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 24px;
+  a{
+    color: var(--Light);
+  }
 }
 `

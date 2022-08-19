@@ -14,6 +14,13 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allDatoCmsFinePrint {
+          edges{
+            node{
+              url
+            }
+          }
+        }
       }
     `).then(result => {
       result.data.allDatoCmsProject.edges.map(({ node: work }) => {
@@ -22,6 +29,15 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/project.js`),
           context: {
             url: work.url,
+          },
+        })
+      })
+      result.data.allDatoCmsFinePrint.edges.map(({ node: printy }) => {
+        createPage({
+          path: `/${printy.url}`,
+          component: path.resolve(`./src/templates/finePrint.js`),
+          context: {
+            url: printy.url,
           },
         })
       })

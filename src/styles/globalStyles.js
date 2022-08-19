@@ -9,6 +9,11 @@ const GlobalStyle = createGlobalStyle`
   --Highlight: #689210;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;

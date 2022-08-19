@@ -18,8 +18,7 @@ export const Nav = () => {
 
       <Links>
       <Link to="/process">Process</Link>
-      <Link to="/robin">Inpiration</Link>
-      <a>About</a>
+      <Link to="/zoe">Work</Link>
       <Link to="/contact">Contact</Link>
       </Links>
     </Container>
@@ -50,10 +49,9 @@ export const NavSmall = () => {
 
     <MenuSmall active={menuVis}>
     <LinksSmall>
-    <li><Link to="/process">Process</Link></li>
-    <li><Link to="/robin">Inpiration</Link></li>
-    <li><a>About</a></li>
-    <li><Link to="/contact">Contact</Link></li>
+    <li><Link to="/process" onClick={menuSwitch}>Process</Link></li>
+    <li><Link to="/zoe" onClick={menuSwitch}>Inpiration</Link></li>
+    <li><Link to="/contact" onClick={menuSwitch}>Contact</Link></li>
     </LinksSmall>
     </MenuSmall>
     </>

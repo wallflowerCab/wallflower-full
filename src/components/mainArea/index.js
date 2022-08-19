@@ -6,6 +6,7 @@ import {ImageText} from '~/components/universal/imageText/index'
 import {FullImage} from '~/components/universal/fullImage/index'
 import {TopText} from '~/components/topText/index'
 import {CalloutHalf} from '~/components/universal/calloutHalf/index'
+import {TwoImgWork} from '~/components/universal/TwoImgWork/index'
 
 import {Text, Form, Logo, Header, Paragraph, Container} from "~/styles/homepageStyles"
 import {useStaticQuery, graphql, Link} from 'gatsby'
@@ -13,6 +14,7 @@ import { StructuredText } from 'react-datocms';
 
 export const MainArea = (props) => {
 const outData = props.stuff
+console.log(outData)
 return(
   <>
 
@@ -60,6 +62,8 @@ return(
         return(<TopText text={chunk.text}/>)
       }else if(chunk.internal.type ==="DatoCmsCalloutHalf"){
         return(<CalloutHalf image={chunk.image.url} text={chunk.text}/>)
+      }else if(chunk.internal.type ==="DatoCmsTwoImageWork"){
+        return(<TwoImgWork image1={chunk.images[0].url} image2={chunk.images[1].url}/>)
       }
 
       else return null

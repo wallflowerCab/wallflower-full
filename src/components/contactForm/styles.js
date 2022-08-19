@@ -70,7 +70,7 @@ export const Check = styled.div`
 display: flex;
 align-items: center;
 input{
-height: 30px !important;
+height: 8px !important;
 width: 30px !important;
 margin: 0;
 padding-bottom: 20px;
