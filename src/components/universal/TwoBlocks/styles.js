@@ -25,6 +25,10 @@ justify-content: space-between;
 
 export const Content = styled.div`
 padding: 50px 30px 30px;
+
+@media(max-width: 500px){
+  padding: 15px 15px 0;
+}
 `
 
 export const Title = styled.h2`

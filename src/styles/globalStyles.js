@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   --Light: #FDFFFD;
   --Bg2: #F6F9F2;
   --Highlight: #689210;
+  --HalfDark: rgba(58, 81, 9, 0.1);
 }
 
 html{

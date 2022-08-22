@@ -29,7 +29,8 @@ justify-content: center;
 `
 
 export const Button = styled.div`
-
+background-color: var(--HalfDark);
+white-space: nowrap;
 font-family: planar;
 font-size: 24px;
 border: 2px solid var(--Dark);
@@ -39,6 +40,7 @@ letter-spacing: 0;
 min-width: 130px;
 text-align: center;
 margin-left: 20px;
+
 :hover{
   border: 4px solid var(--Dark);
   cursor: pointer;

@@ -17,7 +17,7 @@ const Footer = () => {
       <Column>
       <Title>About Us</Title>
       <List>
-      <li><Link to='/process'>process</Link></li>
+      <li><Link to='/process'>Process</Link></li>
       </List>
       </Column>
 

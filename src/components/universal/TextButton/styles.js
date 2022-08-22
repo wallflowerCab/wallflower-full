@@ -60,7 +60,7 @@ justify-content: center;
 `
 
 export const Button = styled.div`
-
+background-color: var(--HalfDark);
 font-family: planar;
 font-size: 24px;
 border: 2px solid var(--Dark);
