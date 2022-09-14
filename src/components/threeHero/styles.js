@@ -10,7 +10,7 @@ height: 450px;
 display: flex;
 justify-content: space-between;
 margin-bottom: -30px;
-
+position: relative;
 @media(max-width: 650px){
   height: 350px;
 }
@@ -18,11 +18,8 @@ margin-bottom: -30px;
   height: 300px;
 }
 @media(min-width: 1130px){
-  height: 500px;
-}@media(min-width: 1300px){
-  height: 550px;
-}@media(min-width: 1400px){
   height: 600px;
+}
 }
 `
 
@@ -30,29 +27,14 @@ export const BigImage = styled.div`
 background-image: ${props => `url(${props.imagey})`};
 background-size: cover;
 height: 100%;
-flex-grow: 1;
-transition: .25s linear;
+transition: .5s linear;
 outline: 2px solid var(--Dark);
 outline-offset: -1px;
-:hover{
-  flex-grow: 3;
-  @media(max-width: 500px){
-    flex-grow: 5;
-  }
-}
+min-width: 100%;
 position: relative;
-h4{
-  position: absolute;
-  top:-1px;
-  left: 35px;
-  padding: 10px 20px;
-  background-color: var(--Light);
-  outline: 2px solid var(--Dark);
-  outline-offset: -2px;
-  font-size: 12px;
-  transform: rotate(90deg);
-  transform-origin: top left;
 
-}
 
+`
+export const Hidden = styled.div`
+display: none;
 `

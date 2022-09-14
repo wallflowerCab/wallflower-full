@@ -7,6 +7,12 @@ outline-offset: -2px;
 padding-top: 60px;
 padding-bottom: 10px;
 margin-top: -1px;
+
+p{
+  font-size: 14px;
+  max-width: 500px;
+  line-height: 20px;
+}
 `
 
 export const TopHold = styled.div`
@@ -116,7 +122,7 @@ ${LinkHold}:hover &{
 `
 
 export const BigChunk = styled.div`
-margin-top: 20px;
+margin-top: 30px;
 
 h3{
   max-width: 600px;
@@ -126,6 +132,7 @@ h3{
 }
 p{
   max-width: 600px;
+  margin-top: 8px;
 }
 `
 

@@ -119,7 +119,6 @@ export const MenuButton = styled.h2`
 export const Bump = styled.div`
 height: 120px;
 transition: 0.5s linear;
-background-color: red;
 
 
 &.scrolled{

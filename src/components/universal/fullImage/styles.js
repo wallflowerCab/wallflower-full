@@ -6,9 +6,9 @@ outline: 2px solid var(--Dark);
 `
 
 export const Holder = styled.div`
-width: calc(100% - 60px);
+width: calc(100% - 20px);
 margin: 0 auto;
-padding: 30px;
+padding: 10px;
 background-color: var(--Light);
 outline: 2px solid var(--Dark);
 outline-offset: -2px;

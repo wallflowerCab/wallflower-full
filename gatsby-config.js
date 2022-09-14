@@ -36,6 +36,13 @@ module.exports = {
       }
     },
     {
+   resolve: `gatsby-source-filesystem`,
+   options: {
+     name: `backgrounds`,
+     path: `./src/images/bg`, // wherever background images are stored
+   },
+ },
+    {
      resolve: `gatsby-source-datocms`,
      options: {
        apiToken: process.env.DATO_ENDPOINT,

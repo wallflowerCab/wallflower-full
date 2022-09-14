@@ -73,5 +73,32 @@ ul, li{
   border-radius: 20px 20px 0 0;
 }
 
+
+
+.each-slide {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.each-slide>div {
+  width: 75%;
+}
+
+.each-slide>div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.each-slide p {
+  width: 25%;
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 `
 export default GlobalStyle;

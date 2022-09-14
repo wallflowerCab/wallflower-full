@@ -35,7 +35,7 @@ h2{
 }
 
 h4{
-  font-size: 28px;
+  font-size: 26px;
 }
 
 @media(max-width: 950px){
