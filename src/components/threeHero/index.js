@@ -8,9 +8,10 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 import pic1 from '~/images/bg/heroDoor.png'
-import pic2 from '~/images/bg/heroDesign.png'
+import pic2 from '~/images/bg/heroAM.png'
 import pic3 from '~/images/bg/heroInstall.png'
 import pic4 from '~/images/bg/heroFingers.png'
+import pic5 from '~/images/bg/heroAM2.png'
 
 
 const settings = {
@@ -26,7 +27,8 @@ const testPics = [
   pic3,
   pic2,
   pic1,
-  pic4
+  pic4,
+  pic5
 ]
 
 

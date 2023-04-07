@@ -4,7 +4,7 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import image1 from '~/images/flatPlan.png'
 import image2 from '~/images/A+M_layout_v1.png'
 import image3 from '~/images/kitchen_render_v2_greenKnobs.png'
-import image4 from '~/images/assemblyPic.png'
+import image4 from '~/images/assemblyPic2.png'
 import image5 from '~/images/FrontKitchen-copy.png'
 const ProcessPage = () => {
   const myRef1 = useRef(null)
