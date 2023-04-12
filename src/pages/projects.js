@@ -17,7 +17,7 @@ const ProjectIndex = ({data}) => {
         <Link to={`/${node.link.url}`}>
         <Block>
         <Image src={node.image.url}/>
-        <h2>{node.text}</h2>
+        <h2>{node.text}</h2> 
         </Block>
         </Link>
 

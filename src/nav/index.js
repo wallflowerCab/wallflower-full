@@ -91,7 +91,7 @@ export const NavSmall = () => {
         scrollPosition > 0 ? 'scrolled' : 'notScrolled',
       )}>
     <Link to="/process" onClick={openToggle} activeClassName="active"><li>Process</li></Link>
-  <Link to="/zoe" onClick={openToggle} activeClassName="active"><li>Projects</li></Link>
+  <Link to="/projects" onClick={openToggle} activeClassName="active"><li>Projects</li></Link>
     <Link to="/contact" onClick={openToggle} activeClassName="active"><li>Contact</li></Link>
     </LinksSmall>
     </MenuSmall>

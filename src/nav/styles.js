@@ -17,7 +17,7 @@ background-color: var(--Light);
 transition: 0.25s linear;
 
 .hamburger-react{
-  margin-right: 15px;
+  margin-right: 15px; 
 }
 
 &.notScrolled{
