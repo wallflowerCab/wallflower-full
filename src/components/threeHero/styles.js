@@ -6,7 +6,7 @@ width: 100%;
 outline: 2px solid var(--Dark);
 outline-offset: -2px;
 margin-top: -1px;
-height: 450px;
+height: 400px;
 display: flex;
 justify-content: space-between;
 margin-bottom: -30px;

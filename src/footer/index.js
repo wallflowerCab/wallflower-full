@@ -40,6 +40,7 @@ const Footer = () => {
       <List>
         <li><Link to='/privacy'>Privacy Policy</Link></li>
         <li><Link to='/tos'>Terms of Service</Link></li>
+        <li className="bold">Oregon CCB #245465</li>
       </List>
       </Column>
     </Holder>

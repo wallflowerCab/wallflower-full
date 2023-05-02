@@ -55,6 +55,12 @@ a{
 
 export const List = styled.ul`
 li{
+
+  &.bold{
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
   color: var(--Light);
   font-size: 12px;
   font-family: adelle-sans;
@@ -65,4 +71,7 @@ li{
     color: var(--Light);
   }
 }
+
+
+
 `

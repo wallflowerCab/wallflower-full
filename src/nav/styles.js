@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 display: flex;
-height: 120px;
+height: 60px;
 outline: solid;
 outline-width: 2px;
 outline-offset: -2px;
@@ -17,7 +17,7 @@ background-color: var(--Light);
 transition: 0.25s linear;
 
 .hamburger-react{
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 &.notScrolled{
@@ -34,34 +34,16 @@ margin-left: 30px;
 `
 
 export const Logo = styled.img`
-height: 76px;
-margin-right: 20px;
-transition: 0.25s linear;
-
-&.scrolled{
-  height: 40px;
-  margin-right: 10px;
-}
+height: 40px;
+margin-right: 10px;
 `
 
 export const Name = styled.div`
 
 h2{
-  font-size: 32px;
+  font-size: 24px;
 }
 
-h4{
-  font-size: 14px;
-  padding-left: 3px;
-}
-
-&.scrolled{
-  h2{
-    font-size: 24px;
-  }
-  h4{
-    display: none;
-  }
 }
 `
 
@@ -117,7 +99,7 @@ export const MenuButton = styled.h2`
 `
 
 export const Bump = styled.div`
-height: 120px;
+height: 60px;
 transition: 0.5s linear;
 
 
@@ -129,7 +111,7 @@ height:60px }
 
 export const LinksSmall = styled.ul`
 border-bottom: 8px solid var(--Dark);
-padding-top: 120px;
+padding-top: 60px;
 position: relative;
 width: 100%;
 background-color: var(--Light);

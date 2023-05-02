@@ -7,12 +7,12 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import pic1 from '~/images/bg/heroDoor.png'
-import pic2 from '~/images/bg/heroAM.png'
-import pic3 from '~/images/bg/heroInstall.png'
-import pic4 from '~/images/bg/heroFingers.png'
-import pic5 from '~/images/bg/heroAM2.png'
-
+import pic1 from '~/images/bg/v2/heroDoor.png'
+import pic2 from '~/images/bg/v2/heroAM.png'
+import pic3 from '~/images/bg/v2/heroInstall.png'
+import pic4 from '~/images/bg/v2/heroFingers.png'
+import pic5 from '~/images/bg/v2/heroAM2.png'
+import pic6 from '~/images/bg/flowerRenderBrown.png'
 
 const settings = {
   className: "slider variable-width",
@@ -24,9 +24,9 @@ slidesToScroll: 1,
     };
 
 const testPics = [
-  pic3,
-  pic2,
   pic1,
+  pic2,
+  pic3,
   pic4,
   pic5
 ]

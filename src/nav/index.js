@@ -27,7 +27,6 @@ export const Nav = () => {
           scrollPosition > 0 ? 'scrolled' : 'notScrolled',
         )}>
       <h2>Wall Flower</h2>
-      <h4>Custom Cabinets</h4>
       </Name>
       </NameLogo>
       </Link>
@@ -79,7 +78,6 @@ export const NavSmall = () => {
           scrollPosition > 0 ? 'scrolled' : 'notScrolled',
         )}>
       <h2>Wall Flower</h2>
-      <h4>Custom Cabinets</h4>
       </Name>
       </NameLogo>
       </Link>
