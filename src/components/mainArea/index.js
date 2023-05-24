@@ -2,6 +2,7 @@ import * as React from "react"
 import {TopImg} from '~/components/universal/TopImg/index'
 import {TextButton} from '~/components/universal/TextButton/index'
 import {TwoBlocks} from '~/components/universal/TwoBlocks/index'
+import {OneBlock} from '~/components/universal/OneBlock/index'
 import {ImageText} from '~/components/universal/imageText/index'
 import {FullImage} from '~/components/universal/fullImage/index'
 import {TopText} from '~/components/topText/index'
@@ -40,6 +41,15 @@ return(
             text2={<StructuredText data={chunk.textTwo} />}
             linktext2={chunk.linkTextTwo}
             link2={chunk.linkUrlTwo}
+          />
+        )
+      }else if(chunk.internal.type === 'DatoCmsOneImage'){
+        return(
+          <OneBlock
+            image1={chunk.imageOne.url}
+            text1={<StructuredText data={chunk.textOne} />}
+            linktext1={chunk.linkTextOne}
+            link1={chunk.linkUrlOne}
           />
         )
       }else if(chunk.internal.type === "DatoCmsTopImage"){

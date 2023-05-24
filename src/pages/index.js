@@ -66,6 +66,23 @@ query MyQuery {
       linkUrlOne
     }
 
+    ... on DatoCmsOneImage{
+      imageOne{
+        url
+      }
+
+      textOne{
+        value
+      }
+      internal{
+        type
+      }
+
+
+      linkTextOne
+      linkUrlOne
+    }
+
     ... on DatoCmsImageText{
       internal{
         type

@@ -5,7 +5,7 @@ export const Holder = styled.div`
 width: 100%;
 outline: 2px solid var(--Dark);
 outline-offset: -2px;
-margin-top: -1px;
+margin-top: -2px;
 height: 400px;
 display: flex;
 justify-content: space-between;
@@ -37,4 +37,9 @@ position: relative;
 `
 export const Hidden = styled.div`
 display: none;
+`
+
+export const TopVid = styled.video`
+width: 100%;
+object-fit: cover;
 `

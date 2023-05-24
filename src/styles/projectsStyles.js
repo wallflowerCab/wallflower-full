@@ -44,6 +44,7 @@ h2{
   margin-bottom: 20px;
   font-family: adelle-sans
   font-weight: 600;
+  margin-top: 20px;
 }
 h4{
   font-size: 22px;

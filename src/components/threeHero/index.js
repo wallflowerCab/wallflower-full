@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {useEffect, useState} from 'react'
-import {Holder, BigImage, Hidden} from './styles'
+import {Holder, BigImage, Hidden, TopVid} from './styles'
 import { graphql } from "gatsby"
 import {StaticImage} from 'gatsby-plugin-image'
 import Slider from "react-slick"
@@ -13,7 +13,7 @@ import pic3 from '~/images/bg/v2/heroInstall.png'
 import pic4 from '~/images/bg/v2/heroFingers.png'
 import pic5 from '~/images/bg/v2/heroAM2.png'
 import pic6 from '~/images/bg/flowerRenderBrown.png'
-
+import vid from '~/images/bg/flowerRender2.mp4'
 const settings = {
   className: "slider variable-width",
 dots: true,
@@ -48,7 +48,8 @@ export const ThreeHero = (props) => {
     <Hidden>{testPics.map((number) => <img src={number}/>)}</Hidden>
     <Holder>
 
-      <BigImage imagey={testPics[count]}/>
+      {/*<BigImage imagey={testPics[count]}/>*/}
+    <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted />
     </Holder>
 
     </>
