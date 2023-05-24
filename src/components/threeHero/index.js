@@ -6,6 +6,7 @@ import {StaticImage} from 'gatsby-plugin-image'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 
 import pic1 from '~/images/bg/v2/heroDoor.png'
 import pic2 from '~/images/bg/v2/heroAM.png'
@@ -34,6 +35,8 @@ const testPics = [
 
 
 export const ThreeHero = (props) => {
+  const breakpoints = useBreakpoint();
+
   const [count, setCount] = useState(0);
     const [countInTimeout, setCountInTimeout] = useState(0);
 
@@ -49,7 +52,9 @@ export const ThreeHero = (props) => {
     <Holder>
 
       {/*<BigImage imagey={testPics[count]}/>*/}
-    <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted playsinline />
+    
+      {breakpoints.xs ? <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender_Small.mp4"} autoPlay loop muted playsinline /> : <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted playsinline />}
+      
     </Holder>
 
     </>

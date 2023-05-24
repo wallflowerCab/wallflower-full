@@ -4,12 +4,19 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
+const myCustomQueries = {
+  xs: '(max-width: 400px)',
+  sm: '(max-width: 720px)',
+  md: '(max-width: 1024px)',
+  l: '(max-width: 1536px)',
+  portrait: '(orientation: portrait)',
+};
 
 module.exports = {
   siteMetadata: {
     title: `wall_Flower_Full`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-breakpoints", "gatsby-plugin-layout", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-recaptcha", `gatsby-plugin-catch-links`, {
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-layout", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-recaptcha", `gatsby-plugin-catch-links`, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -28,7 +35,12 @@ module.exports = {
      plugins: [],
    },
  },
-
+ {
+    resolve: "gatsby-plugin-breakpoints",
+    options: {
+      queries: myCustomQueries,
+    },
+ },
    {
       resolve: 'gatsby-plugin-root-import',
       options: {
