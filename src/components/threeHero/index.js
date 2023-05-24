@@ -53,7 +53,7 @@ export const ThreeHero = (props) => {
 
       {/*<BigImage imagey={testPics[count]}/>*/}
     
-      {breakpoints.xs ? <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender_Small.mp4"} autoplay="autoplay" loop muted playsinline /> : <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted playsinline />}
+      {breakpoints.xs ? <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender_Small.mp4"} autoPlay loop muted playsinline /> : <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted playsinline />}
       
     </Holder>
 
