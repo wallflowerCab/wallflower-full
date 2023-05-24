@@ -49,7 +49,7 @@ export const ThreeHero = (props) => {
     <Holder>
 
       {/*<BigImage imagey={testPics[count]}/>*/}
-    <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted />
+    <TopVid src={"https://wallflowerweb.s3.us-west-1.amazonaws.com/FlowerRender.mp4"} autoPlay loop muted playsinline />
     </Holder>
 
     </>
