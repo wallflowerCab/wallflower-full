@@ -22,7 +22,7 @@ h4{
   width: 66%;
   max-width: 800px;
   font-size: 22px;
-
+  margin-bottom: 15px;
   @media(max-width: 750px){
       width: 100%;
     }
