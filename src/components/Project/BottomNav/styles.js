@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Holder = styled.div`
 width: calc(100% - 60px);
-margin: 0 auto -2px;
+margin: -1px auto -2px;
 padding: 30px;
 background-color: var(--Light);
 outline: 2px solid var(--Dark);

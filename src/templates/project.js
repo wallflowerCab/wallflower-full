@@ -5,6 +5,9 @@ import {TopText} from '~/components/topText/index'
 import { StructuredText } from 'react-datocms';
 import {ContactSmall} from '~/components/universal/ContactSmall/index'
 import {BottomNav} from '~/components/Project/BottomNav/index'
+import styled from 'styled-components'
+
+
 
 const ProjectTemplate = ({data}) => {
   const project = data.datoCmsProject.mainArea;
@@ -13,12 +16,12 @@ const ProjectTemplate = ({data}) => {
   return(
       <>
       <MainArea stuff={project} />
-{/*     <BottomNav
+      <BottomNav
         prevText={projectFull.previousProjectText}
-        prevLink={projectFull.previousProjectUrl}
+        prevLink={`/${projectFull.previousProjectUrl}`}
         nextText={projectFull.nextProjectText}
-        nextLink={projectFull.nextProjectUrl}
-        /> */ }
+        nextLink={`/${projectFull.nextProjectUrl}`}
+        />
       <ContactSmall text ="Feeling inpsired? Get in touch to get started on a cabinetry project of your own."/>
       </>
   )
@@ -30,6 +33,7 @@ query($url: String!){
       edges{
         node{
           url
+          title
         }
       }
     }

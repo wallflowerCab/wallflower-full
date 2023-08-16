@@ -8,8 +8,7 @@ z-index: 2;
 background-color: var(--Light);
 display: flex;
 align-items: center;
-outline: solid;
-outline-width: 2px;
+outline: 2px solid var(--Dark);
 outline-offset: -2px;
 margin-bottom: -2px;
 

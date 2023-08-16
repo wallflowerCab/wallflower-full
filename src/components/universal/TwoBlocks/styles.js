@@ -13,7 +13,7 @@ background-color: var(--Light);
 
 export const Block = styled.div`
 width: calc(50% - 1px);
-outline: 2px solid;
+outline: 2px solid var(--Dark);
 display: flex;
 flex-direction: column;
 justify-content: space-between;

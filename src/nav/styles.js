@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
 display: flex;
 height: 60px;
-outline: solid;
+outline: 2px solid var(--Dark);
 outline-width: 2px;
 outline-offset: -2px;
 align-items: center;

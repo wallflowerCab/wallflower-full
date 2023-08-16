@@ -13,7 +13,7 @@ background-color: var(--Light);
 
 export const Block = styled.div`
 width: 100%;
-outline: 2px solid;
+outline: 2px solid var(--Dark);
 outline-offset: -2px;
 margin-bottom: -1px;
 display: flex;

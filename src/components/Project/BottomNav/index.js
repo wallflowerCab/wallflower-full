@@ -26,7 +26,7 @@ export const BottomNav = (props) => {
   return(
     <Holder>
     <Link to={props.prevLink} className={hideswitch ? 'prev hide' : 'prev'}>{checkPrev ? '🠜' : ''} {props.prevText}</Link>
-    <Link to='/' className="middle">All Projects</Link>
+    <Link to='/projects' className="middle">All Projects</Link>
     <Link to={props.nextLink} className={hideswitch ? 'next hide' : 'next'}>{props.nextText} {checkNext ? '🠞' : ''}</Link>
     </Holder>
   )

@@ -63,7 +63,6 @@ text-decoration: underline;
 
 export const Image = styled.img`
 width: 100%;
-height: 400px;
 object-fit: cover;
 outline: 2px solid var(--Dark);
 @media(max-width: 950px){
