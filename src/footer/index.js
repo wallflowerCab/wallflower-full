@@ -11,7 +11,7 @@ const Footer = () => {
       </ImgHold>
 
       <Column>
-      <Title><Link to='/zoe'>Our Work</Link></Title>
+      <Title><Link to='/projects'>Our Work</Link></Title>
       </Column>
 
       <Column>
@@ -29,9 +29,10 @@ const Footer = () => {
       </Column>
 
       <Column>
-      <Title>Contact</Title>
+      <Title><Link to="/contact">Contact</Link></Title>
       <List>
         <li><a href="mailto: al@wallflower.cab">Email</a></li>
+        <li><a href="https://www.instagram.com/wallflower.cab/?hl=en" target="_blank">instagram</a></li>
       </List>
       </Column>
 

@@ -35,6 +35,7 @@ h2{
 
 h4{
   font-size: 26px;
+  margin-bottom: 15px;
 }
 
 @media(max-width: 950px){
@@ -43,6 +44,14 @@ h4{
   }
   h4{
     font-size: 22px;
+  }
+}
+
+@media(max-width: 500px){
+  padding-right:0;
+  h4{
+    width: 100%;
+    font-size: 20px;
   }
 }
 

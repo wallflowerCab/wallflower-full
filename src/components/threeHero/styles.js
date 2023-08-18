@@ -15,7 +15,7 @@ position: relative;
   height: 350px;
 }
 @media(max-width: 500px){
-  height: 300px;
+  height: 200px;
 }
 @media(min-width: 1130px){
   height: 600px;

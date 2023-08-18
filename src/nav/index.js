@@ -32,8 +32,8 @@ export const Nav = () => {
       </Link>
 
       <Links>
-      <Link to="/process"  activeClassName="active">Process</Link>
       <Link to="/projects"  activeClassName="active">Projects</Link>
+      <Link to="/process"  activeClassName="active">Process</Link>
       <Link to="/contact"  activeClassName="active">Contact</Link>
       </Links>
     </Container>
